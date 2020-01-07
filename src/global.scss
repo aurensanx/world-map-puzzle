@@ -24,3 +24,24 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+/* You can add global styles to this file, and also import other style files */
+html, body, * {
+  margin: 0;
+  padding: 0;
+}
+
+//* {
+//  color: white;
+//}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  //background-image: url('./assets/images/bg.png');
+  color: white;
+  background: lighten(black, 20%);
+}
+

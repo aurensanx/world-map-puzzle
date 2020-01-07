@@ -1,0 +1,17 @@
+<header>
+    <!--  <ion-buttons slot="start">-->
+    <!--    <ion-back-button></ion-back-button>-->
+    <!--  </ion-buttons>-->
+    <ng-container *ngIf="score.totalAreas">
+<!--        -->
+        <p *ngIf="currentArea">{{currentArea[this.map.idField]}}</p>
+        <ion-icon *ngIf="!currentArea" name="arrow-back" routerLink="/home"></ion-icon>
+        <p>{{score.rightGuesses}} / {{score.totalAreas}}</p>
+        <p>{{score.wrongGuesses | i18nPlural: wrongGuessesMapping}}</p>
+        <p>{{timerSeconds}}</p>
+    </ng-container>
+</header>
+<div leaflet
+     [leafletOptions]="options"
+     (leafletMapReady)="onMapReady($event)">
+</div>

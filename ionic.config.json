@@ -1,5 +1,7 @@
 {
   "name": "world-map-puzzle",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,50 @@
+$header-height: 2.5em;
+$map-height: calc(100% - 2.5em);
+
+:host {
+  height: 100%;
+}
+
+header {
+  margin: 0;
+  //padding: 0 10% 0 10%;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  //background: lighten(black, 20%);
+
+  p {
+    padding: 0.5rem;
+
+    &:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  ion-icon {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+div {
+  height: $map-height;
+}
+
+.leaflet-container {
+  padding: 0;
+  margin: 0;
+  background-color: darken(darkblue, 20%);
+}
+
+@media screen and (orientation: portrait) {
+  header {
+    height: 4em;
+  }
+  div {
+    height: calc(100% - 4em);
+  }
+}
